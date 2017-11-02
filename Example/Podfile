@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SkuoAppComponentPod_Example' do
+  pod 'SkuoAppComponentPod', :path => '../'
+
+  target 'SkuoAppComponentPod_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
