@@ -1,0 +1,6 @@
+framework module SkuoAppComponentPod {
+  umbrella header "SkuoAppComponentPod-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - SkuoAppComponentPod (0.1.0)
+
+DEPENDENCIES:
+  - SkuoAppComponentPod (from `../`)
+
+EXTERNAL SOURCES:
+  SkuoAppComponentPod:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SkuoAppComponentPod: ac06d2d1bb8fb6884435571e9ce08dd2e8f4e98c
+
+PODFILE CHECKSUM: ba82238d2adbb117a1082e657279764b490274af
+
+COCOAPODS: 1.3.1

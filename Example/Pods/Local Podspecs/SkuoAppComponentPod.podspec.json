@@ -1,0 +1,22 @@
+{
+  "name": "SkuoAppComponentPod",
+  "version": "0.1.0",
+  "summary": "A short description of SkuoAppComponentPod.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/alading664/SkuoAppComponentPod",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "alading664": "alading664@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/alading664/SkuoAppComponentPod.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SkuoAppComponentPod/Classes/**/*"
+}
