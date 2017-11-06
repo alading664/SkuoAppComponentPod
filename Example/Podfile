@@ -2,6 +2,8 @@ use_frameworks!
 
 target 'SkuoAppComponentPod_Example' do
   pod 'SkuoAppComponentPod', :path => '../'
+  pod 'Masonry'
+  pod 'AFNetworking'
 
   target 'SkuoAppComponentPod_Tests' do
     inherit! :search_paths

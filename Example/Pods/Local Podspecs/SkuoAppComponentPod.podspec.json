@@ -1,8 +1,8 @@
 {
   "name": "SkuoAppComponentPod",
-  "version": "0.1.0",
-  "summary": "A short description of SkuoAppComponentPod.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.0.1",
+  "summary": "The Kit and Category Component in APP",
+  "description": "The Kit and Category Component in APP\n一些悦站，悦管家，智控一号的组件和分类\n安装方法 ：\npod install SkuoAppComponentPod",
   "homepage": "https://github.com/alading664/SkuoAppComponentPod",
   "license": {
     "type": "MIT",
@@ -13,10 +13,18 @@
   },
   "source": {
     "git": "https://github.com/alading664/SkuoAppComponentPod.git",
-    "tag": "0.1.0"
+    "tag": "0.0.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "SkuoAppComponentPod/Classes/**/*"
+  "source_files": "SkuoAppComponentPod/Classes/**/*",
+  "dependencies": {
+    "AFNetworking": [
+      "~> 2.3"
+    ],
+    "Masonry": [
+
+    ]
+  }
 }

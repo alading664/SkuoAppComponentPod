@@ -7,23 +7,26 @@
 //
 
 #import "PullDisplayFilterMenuView.h"
+#import "Masonry.h"
+#import "NSArray+YUZ.h"
+#import "SkuoAppComponentPodDefine.h"
 #import "LeftMenuTableViewCell.h"
 #import "RightContentTableViewCell.h"
 
 @interface PullDisplayFilterMenuView () <UITableViewDataSource, UITableViewDelegate>{
     UITableView *_leftMenuTable;
     UITableView *_rightContentTable;
-    CurrentUser *_usr;
+//    CurrentUser *_usr;
 }
 
 @end
 
 @implementation PullDisplayFilterMenuView
 
-- (instancetype)initWithFrame:(CGRect)frame {
+- (instancetype)initWithFrame:(CGRect)frame {	
     self = [super initWithFrame:frame];
     if (self) {
-        _usr = happyvalleyUser;
+//        _usr = happyvalleyUser;
         [self drawViewComonentUI];
     }
     return self;

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SkuoAppComponentPod'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'The Kit and Category Component in APP '
 
 # This description is used to generate tags and improve search results.
@@ -33,14 +33,42 @@ pod install SkuoAppComponentPod
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'SkuoAppComponentPod/Classes/**/*'
+  # s.source_files = 'SkuoAppComponentPod/Classes/**/*'
   
   # s.resource_bundles = {
   #   'SkuoAppComponentPod' => ['SkuoAppComponentPod/Assets/*.png']
   # }
+  # s.source_files = 'SkuoAppComponentPod/Classes/SkuoAppComponentPodDefine.h'
+  # s.private_header_files = 'SkuoAppComponentPod/Classes/SkuoAppComponentPodDefine.h'
 
+  s.subspec 'SkuoCategory' do |ss|
+    ss.source_files = 'SkuoAppComponentPod/Classes/Category/**/*'
+    ss.public_header_files = 'SkuoAppComponentPod/Classes/Category/*.h'
+  end
+
+  s.subspec 'SkuoDefine' do |ss|
+    ss.source_files = 'SkuoAppComponentPod/Classes/SkuoAppComponentPodDefine.h'
+    ss.private_header_files = 'SkuoAppComponentPod/Classes/SkuoAppComponentPodDefine.h'
+  end
+
+  s.subspec 'PullDisplayFilterMenuView' do |ss|
+    ss.dependency 'SkuoAppComponentPod/SkuoCategory'
+    ss.dependency 'Masonry'
+    ss.dependency 'SkuoAppComponentPod/SkuoDefine'
+    ss.source_files = 'SkuoAppComponentPod/Classes/Module/PullDisplayFilterMenuView/**/*'
+    ss.public_header_files = 'SkuoAppComponentPod/Classes/Module/PullDisplayFilterMenuView/PullDisplayFilterMenuView.h'
+
+  end
+
+ s.subspec 'StarCommitRatiingView' do |ss|
+   ss.dependency 'SkuoAppComponentPod/SkuoCategory'
+   ss.dependency 'Masonry'
+   ss.dependency 'SkuoAppComponentPod/SkuoDefine'
+   ss.source_files = 'SkuoAppComponentPod/Classes/Module/StarCommitRatingView/StarCommitRatingView.{h,m}'
+   ss.public_header_files = 'SkuoAppComponentPod/Classes/Module/StarCommitRatingView/StarCommitRatingView.h'
+ end
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'AFNetworking', '~> 2.3'
-  s.dependency 'Masonry'
+  # s.dependency 'AFNetworking', '~> 2.3'
+
 end

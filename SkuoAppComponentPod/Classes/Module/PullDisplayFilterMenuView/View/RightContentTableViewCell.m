@@ -7,6 +7,9 @@
 //
 
 #import "RightContentTableViewCell.h"
+#import "SkuoAppComponentPodDefine.h"
+#import "Masonry.h"
+
 @interface RightContentTableViewCell () {
     UILabel *_contentLabel;
 }

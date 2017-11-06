@@ -7,6 +7,9 @@
 //
 
 #import "StarCommitRatingView.h"
+#import "Masonry.h"
+#import "NSArray+YUZ.h"
+
 @interface StarCommitRatingView () {
     NSArray *_starArray;
     UIButton *_btn1;
